@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styles  */
+.display-flex{
+display: flex;
+
+}
+.btn-primary{
+color: white;
+  background-color: #FF900E;
+  font-size:1.25rem ;
+  font-weight:600 ;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border:none;
+}
+/* dark-o2 */
+.text-gray{
+  color: #424242;
+}
+/* dark-o3 */
+.text-light-gray{
+  color: #727272;
+}
+.bg-color{
+  background-color:rgba(255, 144, 14, 0.1);
+}
+main {
+  max-width: 1440px;
+  height:1060px ;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+main > section{
+margin-top: 130px;
+}
+/* header styles  */
+/* nav styles  */
+.navbar{
+  margin-top: 60px;
+  /* border: 2px solid  red; */
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.brand{
+  font-size: 3rem ;
+  font-weight:bold;
+}
+.nav-links{
+  list-style: none;
+}
+  .nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    
+  }
+.nav-item {
+  margin:  0 30px;
+}
+/* banner styles  */
+
+.navbar, .banner {
+  max-width:1440px ;
+  margin: 0 auto;
+
+}
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-weight: bold;
+  font-size:4rem ;
+}
+.banner-description{
+   font-weight: 500;
+  font-size:1rem ;
+  margin-bottom: 32px;
+}
+.banner-image{
+  width: 100%;
+}
+
+/* teams and feathers  */
+
+.teams {
+justify-content: center;
+align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+.our-feathers{
+  border: 2px solid red;
+  width: 530px;
+  height: 304px;
+  margin-left: 70px;
+}
+
+#Quick-list{
+  font-size:3rem ;
+font-weight:500 ;
+}
+#of-Our{
+  font-size:3rem ;
+font-weight:bold;
+}
+#Features{
+   font-size:3rem ;
+font-weight:bold; 
+color: #FF900E;
+}
+.our-feathers-description{
+font-size:1rem ;
+font-weight: 400;
+}
+
+/* Responsive media query */
+@media screen  and (max-width:576px ){
+  .navbar,.nav-links{
+    flex-direction: column;
+  }
+  
+}
