@@ -135,6 +135,7 @@ font-size:1rem ;
 font-weight:400;
 }
 /* love-easy section  */
+
 #fethers-border{
   /* width: 240px; */
   border-left: 5px solid #FF900E;
@@ -176,6 +177,21 @@ font-weight: bold;
     border-radius: 8px;
 
 }
+.love-enjoy-img img {
+  width: 100%;
+}
+#experience-badge{
+padding: 45px 42px;
+font-size: 1.5rem;
+margin-left: -92px;
+margin-top: -150px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+
 /* some facts section styles here  */
 
 .facts-container{
@@ -226,15 +242,17 @@ margin-top: 5px;
   filter: grayscale(100%);
 }
 
-
-
-
 /* Responsive media query */
 @media screen  and (max-width:576px){
   .navbar,
   .nav-links,
-  .teams{
+  .teams,
+  .love-easy
+  {
     flex-direction: column !important;
+  }
+  .love-easy{
+    gap: 50px;
   }
     .team-img-container ,
      .facts-container,
@@ -247,6 +265,22 @@ margin-top: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     /* margin-right: 3px; */
+  }
+  .love-enjoy-content{
+        width: 100%;
+            height: 100%;
+  }
+  .love-enjoy-img{
+    width: 100%;
+    border: 2px solid red;
+    /* padding-bottom: 20px; */
+    height: 100%;
+    
+  }
+  #experience-badge {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
   .fact-card{
     margin-left: 40px;
@@ -268,7 +302,7 @@ margin-top: 20px;
 }
 /* medium size media query  */
 @media screen  and (min-width:576px) and (max-width:992px) {
-  .teams{
+  .teams,.love-easy {
     flex-direction: column;
   }
   #Features, #Quick-list, #of-Our{
@@ -278,7 +312,18 @@ font-size:4rem ;
   .sponsor-companies img{
     margin: 10px auto;
   }
-  
+  .love-easy{
+    gap: 50px;
+  }
+  .love-enjoy-content,.love-enjoy-img{
+    width: 100%;
+    height:100% ;
+    /* margin-top: 20px; */
+  }
+  #experience-badge{
+    margin-left: 0;
+    margin-top:10px ;
+  }
   .sponsor-companies,
   .facts-container {
 grid-template-columns: repeat(2,1fr);
